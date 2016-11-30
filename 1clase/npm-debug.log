@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '—save-dev',
+1 verbose cli   'fs' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 error arg Argument starts with non-ascii dash, this is probably invalid: [ '—save-dev', 'fs' ]
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData —save-dev
+9 silly fetchPackageMetaData fs
+10 silly fetchOtherPackageData —save-dev
+11 silly cache add args [ '—save-dev', null ]
+12 verbose cache add spec —save-dev
+13 silly fetchNamedPackageData fs
+14 silly mapToRegistry name fs
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'fs',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   escapedName: 'fs',
+17 silly mapToRegistry   name: 'fs',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/fs
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: '—save-dev',
+19 silly cache add   scope: null,
+19 silly cache add   escapedName: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: '—save-dev',
+19 silly cache add   spec: '/Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev',
+19 silly cache add   type: 'local' }
+20 verbose request uri https://registry.npmjs.org/fs
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 7:16:02 PM
+23 verbose request id 1e9f893cc2b2b17b
+24 http request GET https://registry.npmjs.org/fs
+25 error addLocal Could not install /Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev
+26 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData  error for —save-dev { Error: ENOENT: no such file or directory, open '/Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData   errno: -2,
+26 silly fetchPackageMetaData   code: 'ENOENT',
+26 silly fetchPackageMetaData   syscall: 'open',
+26 silly fetchPackageMetaData   path: '/Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev' }
+27 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+28 info attempt registry request try #2 at 7:16:13 PM
+29 http request GET https://registry.npmjs.org/fs
+30 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+31 info attempt registry request try #3 at 7:17:13 PM
+32 http request GET https://registry.npmjs.org/fs
+33 silly fetchPackageMetaData TypeError: The header content contains invalid characters
+33 silly fetchPackageMetaData     at ClientRequest.OutgoingMessage.setHeader (_http_outgoing.js:358:11)
+33 silly fetchPackageMetaData     at new ClientRequest (_http_client.js:86:14)
+33 silly fetchPackageMetaData     at Object.exports.request (http.js:31:10)
+33 silly fetchPackageMetaData     at Object.exports.request (https.js:199:15)
+33 silly fetchPackageMetaData     at Request.start (/usr/local/lib/node_modules/npm/node_modules/request/request.js:740:32)
+33 silly fetchPackageMetaData     at Request.end (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1394:10)
+33 silly fetchPackageMetaData     at end (/usr/local/lib/node_modules/npm/node_modules/request/request.js:567:14)
+33 silly fetchPackageMetaData     at Immediate.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:581:7)
+33 silly fetchPackageMetaData     at runCallback (timers.js:637:20)
+33 silly fetchPackageMetaData     at tryOnImmediate (timers.js:610:5)
+33 silly fetchPackageMetaData  error for fs TypeError: The header content contains invalid characters
+33 silly fetchPackageMetaData     at ClientRequest.OutgoingMessage.setHeader (_http_outgoing.js:358:11)
+33 silly fetchPackageMetaData     at new ClientRequest (_http_client.js:86:14)
+33 silly fetchPackageMetaData     at Object.exports.request (http.js:31:10)
+33 silly fetchPackageMetaData     at Object.exports.request (https.js:199:15)
+33 silly fetchPackageMetaData     at Request.start (/usr/local/lib/node_modules/npm/node_modules/request/request.js:740:32)
+33 silly fetchPackageMetaData     at Request.end (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1394:10)
+33 silly fetchPackageMetaData     at end (/usr/local/lib/node_modules/npm/node_modules/request/request.js:567:14)
+33 silly fetchPackageMetaData     at Immediate.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:581:7)
+33 silly fetchPackageMetaData     at runCallback (timers.js:637:20)
+33 silly fetchPackageMetaData     at tryOnImmediate (timers.js:610:5)
+34 silly rollbackFailedOptional Starting
+35 silly rollbackFailedOptional Finishing
+36 silly runTopLevelLifecycles Finishing
+37 silly install printInstalled
+38 verbose stack Error: ENOENT: no such file or directory, open '/Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev'
+38 verbose stack     at Error (native)
+39 verbose cwd /Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase
+40 error Darwin 14.5.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "—save-dev" "fs"
+42 error node v6.9.1
+43 error npm  v3.10.8
+44 error path /Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev
+45 error code ENOENT
+46 error errno -2
+47 error syscall open
+48 error enoent ENOENT: no such file or directory, open '/Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev'
+49 error enoent ENOENT: no such file or directory, open '/Volumes/DATOS/CLASES-CODERHOUSE/NODEjs/1clase/—save-dev'
+49 error enoent This is most likely not a problem with npm itself
+49 error enoent and is related to npm not being able to find a file.
+50 verbose exit [ -2, true ]
